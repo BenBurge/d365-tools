@@ -45,15 +45,16 @@ if (-not (Test-Path $bacpacFile)) {
     exit 1
 }
 
-$targetServerName = "Server=localhost;TrustServerCertificate=True"
+$targetServerName = "localhost"
 $targetDatabaseName = "AxDB_New"
 
 $sqlPackageArgs = @(
-    "/Action:Import"
-    "/SourceFile:$bacpacFile"
-    "/TargetServerName:`"$targetServerName`""
-    "/TargetDatabaseName:`"$targetDatabaseName`""
+    "/a:Import"
+    "/sf:$bacpacFile"
+    "/tsn:$targetServerName"
+    "/tdn:$targetDatabaseName"
     "/p:CommandTimeout=1200"
+    "/ttsc:True"
 )
 
 
