@@ -1,3 +1,5 @@
+USE AxDB_New;
+
 CREATE USER axdeployuser FROM LOGIN axdeployuser 
 
 EXEC sp_addrolemember 'db_owner', 'axdeployuser' 
