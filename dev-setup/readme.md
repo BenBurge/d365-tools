@@ -49,8 +49,8 @@
 10. In SSMS run 03-modify-new-axdb.sql
 11. In SSMS run 04-replace-old-db.sql
 12. In SSMS run 05-enable-users.sql
-13. In PowerShell run 06-start-services.ps1
-14. Create a backup of your new database AxDB_New. This is to make sure we don't have to wait for the indexes to build again if we mess up the next steps
+13. Create a backup of your new database AxDB_New. This is to make sure we don't have to wait for the indexes to build again if we mess up the next steps
+14. In PowerShell run 06-start-services.ps1
 15. Open Visual Studio as an Administrator (Or via the taskbar if you followed steps 2-4.
 16. Clone your D365 repository. In our case we will be using Azure DevOps.
 17. Open the Team Explorer panel and click on the workspace listed, then click Manage Workspaces
